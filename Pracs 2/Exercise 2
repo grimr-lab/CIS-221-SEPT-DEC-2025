@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simplified Registration Form</title>
+</head>
+<body>
+  <h2>Registration Form</h2>
+
+  <form action="/submit" method="post">
+
+    <!-- Full Name -->
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <!-- Gender (Radio Buttons) -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <!-- Interests (Checkboxes) -->
+    <label>Interests:</label><br>
+    <input type="checkbox" id="coding" name="interests" value="coding">
+    <label for="coding">Coding</label>
+    <input type="checkbox" id="music" name="interests" value="music">
+    <label for="music">Music</label><br><br>
+
+    <!-- Country (Dropdown) -->
+    <label for="country">Country:</label><br>
+    <select id="country" name="country">
+      <option value="">--Select--</option>
+      <option value="us">United States</option>
+      <option value="uk">United Kingdom</option>
+      <option value="ng">Nigeria</option>
+    </select><br><br>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <!-- Upload Profile Picture -->
+    <label for="profilepic">Profile Picture:</label><br>
+    <input type="file" id="profilepic" name="profilepic"><br><br>
+
+    <!-- Bio (Textarea) -->
+    <label for="bio">Short Bio:</label><br>
+    <textarea id="bio" name="bio" rows="3" cols="30"></textarea><br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Register</button>
+    <button type="reset">Clear</button>
+
+  </form>
+</body>
+</html>
